@@ -11,7 +11,7 @@ class KotlindemoApplication {
 
     @Autowired
     fun register(ctx: GenericApplicationContext): Unit {
-        beans().invoke(ctx)
+        beans().initialize(ctx)
     }
 }
 
